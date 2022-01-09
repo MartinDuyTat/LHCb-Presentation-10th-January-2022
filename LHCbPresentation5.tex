@@ -137,6 +137,7 @@
 
 \begin{frame}{Strong-phase determination in quantum correlated $D^0\bar{D^0}$ decays}
   \begin{itemize}
+    \item{Double-tag analysis: Reconstruct signal mode ($KK\pi\pi$) and known tag mode}
     \item{$D^0\bar{D^0}$ pair is quantum correlated}
   \end{itemize}
   \begin{figure}[H]
@@ -183,20 +184,241 @@
   \end{figure}
 \end{frame}
 
+\begin{frame}{Strong-phase in quantum correlated $D^0\bar{D^0}$ decays}
+  \begin{itemize}
+    \item{Tag mode can be a \underline{flavour tag}}
+    \begin{itemize}
+      \item{$K^-\pi^+$, $K^-\pi^+\pi^0$, $K^-\pi^+\pi^-\pi^+$, $K^-e^+\nu_e$}
+    \end{itemize}
+  \end{itemize}
+  \begin{figure}[H]
+    \centering
+    \vspace{0.3cm}
+    \begin{fmffile}{fgraph/fgraph_flavour_tag}
+      \setlength{\unitlength}{1cm}
+      \begin{fmfgraph*}(8,4)
+        \fmfstraight
+        \fmfleft{i4,i3,i2,i1}
+        \fmfright{g1,o1,o2,g2}
+        \fmflabel{$\pi^+$}{o1}
+        \fmflabel{$K^-$}{o2}
+        \fmflabel{$K^+$}{i1}
+        \fmflabel{$K^-$}{i2}
+        \fmflabel{$\pi^+$}{i3}
+        \fmflabel{$\pi^-$}{i4}
+        \fmf{fermion}{w,i1}
+        \fmf{fermion}{w,i2}
+        \fmf{fermion}{w,i3}
+        \fmf{fermion}{w,i4}
+        \fmf{fermion}{w,o1}
+        \fmf{fermion}{w,o2}
+        \fmf{phantom}{w,g1}
+        \fmf{phantom}{w,g2}
+        \fmfblob{1cm}{w}
+      \end{fmfgraph*}
+    \end{fmffile}
+    \vspace{0.0cm}
+  \end{figure}
+\end{frame}
+
+\begin{frame}{Strong-phases in quantum correlated $D^0\bar{D^0}$ decays}
+  \begin{itemize}
+    \item{Tag mode can be a \underline{CP even tag}}
+    \begin{itemize}
+      \item{$KK$, $\pi\pi$, $\pi\pi\pi^0$, $K_S\pi^0\pi^0$, $K_L\pi^0$, $K_L\omega$}
+    \end{itemize}
+  \end{itemize}
+  \begin{figure}[H]
+    \centering
+    \vspace{0.3cm}
+    \begin{fmffile}{fgraph/fgraph_CPeven_tag}
+      \setlength{\unitlength}{1cm}
+      \begin{fmfgraph*}(8,4)
+        \fmfstraight
+        \fmfleft{i4,i3,i2,i1}
+        \fmfright{g1,o1,o2,g2}
+        \fmflabel{$K^+$}{o1}
+        \fmflabel{$K^-$}{o2}
+        \fmflabel{$K^+$}{i1}
+        \fmflabel{$K^-$}{i2}
+        \fmflabel{$\pi^+$}{i3}
+        \fmflabel{$\pi^-$}{i4}
+        \fmf{fermion}{w,i1}
+        \fmf{fermion}{w,i2}
+        \fmf{fermion}{w,i3}
+        \fmf{fermion}{w,i4}
+        \fmf{fermion}{w,o1}
+        \fmf{fermion}{w,o2}
+        \fmf{phantom}{w,g1}
+        \fmf{phantom}{w,g2}
+        \fmfblob{1cm}{w}
+      \end{fmfgraph*}
+    \end{fmffile}
+    \vspace{0.0cm}
+  \end{figure}
+\end{frame}
+
+\begin{frame}{Strong-phase in quantum correlated $D^0\bar{D^0}$ decays}
+  \begin{itemize}
+    \item{Tag mode can be a \underline{CP odd tag}}
+    \begin{itemize}
+      \item{$K_S\pi^0$, $K_S\omega$, $K_S\eta$, $K_S\eta'$, $K_L\pi^0\pi^0$}
+    \end{itemize}
+  \end{itemize}
+  \begin{figure}[H]
+    \centering
+    \vspace{0.3cm}
+    \begin{fmffile}{fgraph/fgraph_CPodd_tag}
+      \setlength{\unitlength}{1cm}
+      \begin{fmfgraph*}(8,4)
+        \fmfstraight
+        \fmfleft{i4,i3,i2,i1}
+        \fmfright{g1,o1,o2,g2}
+        \fmflabel{$\pi^0$}{o1}
+        \fmflabel{$K_S$}{o2}
+        \fmflabel{$K^+$}{i1}
+        \fmflabel{$K^-$}{i2}
+        \fmflabel{$\pi^+$}{i3}
+        \fmflabel{$\pi^-$}{i4}
+        \fmf{fermion}{w,i1}
+        \fmf{fermion}{w,i2}
+        \fmf{fermion}{w,i3}
+        \fmf{fermion}{w,i4}
+        \fmf{fermion}{w,o1}
+        \fmf{fermion}{w,o2}
+        \fmf{phantom}{w,g1}
+        \fmf{phantom}{w,g2}
+        \fmfblob{1cm}{w}
+      \end{fmfgraph*}
+    \end{fmffile}
+    \vspace{0.0cm}
+  \end{figure}
+\end{frame}
+
+\begin{frame}{Strong-phase in quantum correlated $D^0\bar{D^0}$ decays}
+  The yield in bin $i$ depends on the tag mode:
+  \begin{itemize}
+    \item{\underline{Flavour tag}:}
+    \begin{itemize}
+      \item{$N_i \propto K_i$}
+    \end{itemize}
+    \item{CP even tag:}
+    \begin{itemize}
+      \item{$N_i \propto K_i + \bar{K_i} - 2\sqrt{K_i\bar{K_i}}c_i$}
+    \end{itemize}
+    \item{CP odd tag:}
+    \begin{itemize}
+      \item{$N_i \propto K_i + \bar{K_i} + 2\sqrt{K_i\bar{K_i}}c_i$}
+    \end{itemize}
+  \end{itemize}
+  \vspace{0.2cm}
+  Strategy for obtaining $c_i$ (and $s_i$):
+  \begin{enumerate}
+    \item{Measure $K_i$ using flavour tags}
+    \item{Determine yields of CP even/odd tags}
+    \item{Fit for $c_i$}
+  \end{enumerate}
+\end{frame}
+
 \subsection{First look at binned fits: Measurement of fractional bin yields \texorpdfstring{$K_i$}{Ki}}
 
-\subsection{Measurement of CP-even fraction \texorpdfstring{$F_+$}{F+}}
+\begin{frame}{Measurement of fractional bin yields $K_i$}
+  \begin{figure}
+    \centering
+    \vspace{-0.2cm}
+    \begin{subfigure}{0.35\textwidth}
+      \includegraphics[width = 1.0\textwidth]{Plots/DoubleTagYield_DoubleTag_Flavour_KKpipi_vs_Kpi_SignalBinM4_TagBin0.png}
+      \caption{$K\pi$}
+    \end{subfigure}
+    \begin{subfigure}{0.35\textwidth}
+      \includegraphics[width = 1.0\textwidth]{Plots/DoubleTagYield_DoubleTag_Flavour_KKpipi_vs_Kpipi0_SignalBinM4_TagBin0.png}
+      \caption{$K\pi\pi^0$}
+    \end{subfigure}%
+    \begin{subfigure}{0.35\textwidth}
+      \includegraphics[width = 1.0\textwidth]{Plots/DoubleTagYield_DoubleTag_Flavour_KKpipi_vs_Kpi_SignalBinM4_TagBin0.png}
+      \caption{$K\pi\pi\pi$}
+    \end{subfigure}
+  \end{figure}
+\end{frame}
 
-\section{Summary and conclusion}
-\begin{frame}{Summary and conclusion}
+\begin{frame}{Measurement of fractional bin yields $K_i$}
+  \begin{figure}
+    \includegraphics[width = 0.80\textwidth]{Plots/Ki_Measured_vs_Model.png}
+  \end{figure}
+  \vspace{-0.6cm}
   \begin{center}
-    {\huge Summary and conclusion}
+    \Large Model agrees well with data so far!
   \end{center}
 \end{frame}
 
-\begin{frame}{Summary of CP observables}
+\subsection{Measurement of CP-even fraction \texorpdfstring{$F_+$}{F+}}
+
+\begin{frame}{Measurement of CP-even fraction $F_+$}
+  CP tag yields too small for strong-phase analysis...
   \begin{itemize}
-    \item{}
+    \setlength\itemsep{0.5em}
+    \item{Measure CP-even fraction $F_+$ instead}
+    \begin{itemize}
+      \setlength\itemsep{0.5em}
+      \item{$F_+ = 1$ for CP even tags, $F_+ = 0$ for CP odd tags}
+      \item{$2F_+ - 1$ is the average cosine of the strong-phase}
+    \end{itemize}
+    \item{$F_+$ is an input to GLW analyses of $\gamma$}
+    \item{Good cross check of data-model agreement}
+    \item{$KK\pi\pi$ model prediction: $F_+ = 0.74$, or $2F_+ - 1 = 0.47$}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Measurement of CP-even fraction $F_+$}
+  Strategy for measuring $F_+$:
+  \begin{itemize}
+    \setlength\itemsep{0.5em}
+    \item{Measure double tag yield of CP tags \textit{without} binning}
+    \item{Normalize double tag yields with single tag yields}
+    \item{$\frac{N^{\rm DT}}{N^{\rm ST}} = \rm{BF}(D^0\to KK\pi\pi)\times\big(1\pm(2F_+ - 1)\big)$}
+  \end{itemize}
+  \begin{figure}
+    \centering
+    \vspace{-0.2cm}
+    \begin{subfigure}{0.45\textwidth}
+      \includegraphics[width = 1.0\textwidth]{Plots/DoubleTagYield_DoubleTag_CP_KKpipi_vs_KSpi0_SignalBin0.png}
+      \caption{$K_S\pi^0$}
+    \end{subfigure}%
+    \begin{subfigure}{0.45\textwidth}
+      \includegraphics[width = 1.0\textwidth]{Plots/DoubleTagYield_DoubleTag_CP_KKpipi_vs_KLpi0_SignalBin0.png}
+      \caption{$K_L\pi^0$}
+    \end{subfigure}
+  \end{figure}
+\end{frame}
+
+\begin{frame}{Measurement of CP-even fraction $F_+$}
+  \begin{figure}
+    \includegraphics[width = 0.80\textwidth]{Plots/CPeven_fraction_combination.png}
+  \end{figure}
+  \vspace{-0.6cm}
+  \begin{center}
+    \large Fit result: $F_+ = \SI{0.71(4)}{}$ \\
+    \large Model prediction: $F_+ = 0.74$
+  \end{center}
+\end{frame}
+
+\section{Summary}
+
+\begin{frame}{Summary}
+  \begin{itemize}
+    \item{LHCb:}
+    \begin{itemize}
+      \setlength\itemsep{1.5em}
+      \item{$B^\pm\to(K^+K^-\pi^+\pi^-)_Dh^\pm$ analysis in B2OC WG review}
+      \item{Very encouraging feedback so far}
+    \end{itemize}
+    \item{BESIII:}
+    \begin{itemize}
+      \setlength\itemsep{1.5em}
+      \item{Fractional bin yields $K_i$ agree well with model}
+      \item{CP-even fraction $F_+$ shows good agreement with model, but low yields}
+      \item{Will include $K_{S, L}\pi\pi$ tags}
+    \end{itemize}
   \end{itemize}
 \end{frame}
 
